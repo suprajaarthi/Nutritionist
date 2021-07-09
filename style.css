@@ -1,0 +1,63 @@
+
+body {
+  padding-top: 50px;
+}
+h4,p,a,button
+{
+  text-align: center;
+}
+.show-cart li {
+  display: flex;
+}
+
+.card-img-top {
+  width: 100px;
+  height: 150px;
+  align-self: center;
+}
+#bord2
+{
+  border: 4px solid  #DBB1CD;
+  box-shadow: 8px 2px 3px dimgray;
+  margin-bottom: 20px;
+  border-radius: 1px 30px / 30px;
+}
+#bord
+{
+  border: 4px solid lightpink;
+border-radius:15% 10%;
+  box-shadow: 8px 2px 3px dimgray;
+  margin-bottom: 20px;
+}
+.card {
+
+
+  padding-bottom: 1rem;
+
+  overflow: hidden;
+}
+  img {
+    border-radius: 5rem 5rem 0 0;
+
+   /*mix-blend-mode: var(--card-blend-mode);*/
+   /*mix-blend-mode:screen;*/
+   /*filter: contrast(150%);*/
+   /*filter: saturate(200%);*/
+   /*filter: brightness(100%);*/
+   
+  }
+
+
+body{
+    background: url("https://www10.lunapic.com/do-not-link-here-use-hosting-instead/162485622610144129?2710832647") no-repeat center center fixed ; 
+    background-size: cover;
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    /* font-family: 'Poppins', sans-serif;
+     */
+     font-family: 'Lato', sans-serif;
+    color:#004B8D;
+    /* opacity: 0.5; */
+    /* backdrop-filter: blur(20px); */
+}
