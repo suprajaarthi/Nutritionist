@@ -9,6 +9,30 @@ h4,p,a,button
 .show-cart li {
   display: flex;
 }
+.grid-child-svg{
+    width: 300px !important;
+    height: auto;
+    margin-left: -15rem;
+    margin-top: 5rem;
+    flex: 1;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+} 
+  .grid-child{
+      z-index: 4;
+background: #1FA2FF;
+background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  
+background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
+
+background-size: cover;
+      width: 500px;
+      border-radius: 20px;
+      margin-left: -15rem !important;
+   }
+
 
 .card-img-top {
   width: 100px;

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     
     <!--====== Title ======-->
-    <title>Nutritionist | Calculator</title>
+    <title>Nutritionist | Vegies</title>
     
    
 
@@ -31,26 +31,38 @@
     <link rel="stylesheet" href="assets/css/style.css">
     
 </head>
-  <div class="col-lg-18">
-                        <nav class="navbar navbar-expand-lg" style="margin-right: 300px;">
+ <header class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <nav class="navbar navbar-expand-lg">
                        
-                          
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                  <ul id="nav" class="navbar-nav ml-auto">
+                            <a href="index.html"> <img style="height:100px;bottom: 1px;position: relative;left: 270px;"  src="food.png"></a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                           
+                           <div style="position:relative;top:10px" class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                               <br>
+                                 <ul id="nav" class="navbar-nav ml-auto">
+
                                     <li class="nav-item active">
-                                        <a class="page-scroll" href="head.html">Home</a>
+                                        <a class="page-scroll" href="index.html"><b><p style="color:darkblue;">Home</p></a></b>
                                     </li>
-                                   <!--  <li class="nav-item">
-                                        <a class="page-scroll" href="calci.html">Calci</a>
-                                    </li> -->
+                           
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="fruits.html">Fruits</a>
+                                        <a class="page-scroll" href="fruits.html"><b><p style="color:darkblue;">Fruits</p></a></b>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="vegies.html">Vegies</a>
+                                        <a class="page-scroll" href="vegies.html"><b><p style="color:darkblue;">Vegies</p></a></b>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="carbo.html">Carbo</a>
+                                        <a class="page-scroll" href="carbs.html"><b><p style="color:darkblue;">Carbs</p></a></b>
                                     </li>
                                    <!--  <li class="nav-item">
                                         <a class="page-scroll" href="#blog">Blog</a>
@@ -59,17 +71,14 @@
                             </div> <!-- navbar collapse -->
                             
                             <div class="navbar-btn d-none d-sm-inline-block">
-                                <a class="main-btn2" data-scroll-nav="0" href="calci.html">
+                                <a class="main-btn2" data-scroll-nav="0" href="calculate.html">
                                 Calculate</a>
                             </div>
                         </nav> <!-- navbar -->
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
-        </div>
-
-
-
+        </div> <!-- navbar area -->
             <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
     
@@ -120,21 +129,21 @@
 font-family: 'Sanchez', serif;
 }
   </style>
-<!-- Nav -->
-   <!-- <strong><b></b></strong>  <h1 style="color: firebrick;text-align: center;">FRUITS & NUTS</h1> -->
 
 <nav class="navbar navbar-inverse bg-inverse">
     <div class="row" >
 
         <div class="col">
-          <button type="button" style="background: linear-gradient(to right, #a8ff78, #96c93d);border: 1px solid  #90EE90;" class="btn btn-primary" style="  opacity: 1;
-  transition: 0s" data-toggle="modal" data-target="#cart">Menu(<span class="total-count"></span>)</button><button 
+          <button style="background: linear-gradient(to right, #a8ff78, #96c93d);border: 1px solid  #90EE90;" class="btn btn-primary" 
+          style="  opacity: 1;transition: 0s"
+           data-toggle="modal" data-target="#cart">Menu(<span class="total-count"></span>)</button>
+
+  <button 
   style=" border: 3px #FF3131;background: linear-gradient(to left, #ef3b36,blanchedalmond)" class="clear-cart btn btn-danger">Clear Menu Board</button></div>
     </div>
 </nav>
 
-<!-- Main -->
-<!-- <b><p style="text-align: center;color:#228B22;">Weight of 1 fruit and its calorie is given</p> </b> -->
+
 <div class="container">
     <div class="row">
       <div class="col">
@@ -178,7 +187,7 @@ font-family: 'Sanchez', serif;
   <div class="card-block">
     <h4 style="color:  #F4BB44;"class="card-title">Beans</h4>
     <p class="card-text">24kcal; 3.15g carbo; 1.8g protein ,0.4g fat, 2.9 fibre</p>
-    &nbsp;&nbsp;&nbsp; <a href="#" data-name="Beans" data-price="174" id="add" class="add-to-cart btn btn-primary">Add to menu</a>
+    &nbsp;&nbsp;&nbsp; <a href="#" data-name="Beans" data-price="154" id="add" class="add-to-cart btn btn-primary">Add to menu</a>
   </div>
 
 </div>
@@ -189,7 +198,7 @@ font-family: 'Sanchez', serif;
   <div class="card-block">
     <h4 style="color: #96FF00;" class="card-title">Brinjal</h4>
     <p class="card-text">24cals,5.7g carbs; 1g protein;.19g fat; Vitamin C</p>
-   &nbsp;&nbsp;&nbsp;  <a href="#" data-name="Brinjal" data-price="13" id="add" class="add-to-cart btn btn-primary">Add to menu</a>
+   &nbsp;&nbsp;&nbsp;  <a href="#" data-name="Brinjal" data-price="17" id="add" class="add-to-cart btn btn-primary">Add to menu</a>
   </div>
 
 </div>
@@ -200,7 +209,7 @@ font-family: 'Sanchez', serif;
   <div class="card-block">
     <h4 style="color:#420075;"  class="card-title">Potato</h4>
     <p class="card-text">110cal ; 25.2g carbo ; 2.3g protein; .1g fat; 2.4g fibre</p>
-  &nbsp;&nbsp;&nbsp; <a href="#" data-name="Potato" data-price="39" id="add" class="add-to-cart btn btn-primary">Add to menu</a>
+  &nbsp;&nbsp;&nbsp; <a href="#" data-name="Potato" data-price="45" id="add" class="add-to-cart btn btn-primary">Add to menu</a>
   </div>
 
 </div>
@@ -379,7 +388,7 @@ font-family: 'Sanchez', serif;
   <div class="card-block">
     <h4 style="color:peachpuff;" class="card-title">Paneer</h4>
     <p class="card-text">296 cal;22g fat;20g protein;480g calcium;Vitamin B12</p>
-   &nbsp;&nbsp;  <a href="#" data-name="Paneer" data-price="290" data-image="https://3.imimg.com/data3/IC/JO/MY-9839190/organic-lemon-250x250.jpg" alt="Card image cap" id="add" class="add-to-cart btn btn-primary">Add to menu</a>
+   &nbsp;&nbsp;  <a href="#" data-name="Paneer" data-price="150" data-image="https://3.imimg.com/data3/IC/JO/MY-9839190/organic-lemon-250x250.jpg" alt="Card image cap" id="add" class="add-to-cart btn btn-primary">Add to menu</a>
 
 
 
@@ -432,7 +441,7 @@ font-family: 'Sanchez', serif;
   <div class="card-block">
     <h4 style="color:gold;" class="card-title">Fish</h4>
     <p class="card-text">42 calories; 0.5g fat; 3g protein; 15g carbo; 3g fiber</p>
-   &nbsp;&nbsp;  <a href="#" data-name="Fish" data-price="103" data-image="" alt="Card image cap" id="add" class="add-to-cart btn btn-primary">Add to menu</a>
+   &nbsp;&nbsp;  <a href="#" data-name="Fish" data-price="68" data-image="" alt="Card image cap" id="add" class="add-to-cart btn btn-primary">Add to menu</a>
 
 
 
@@ -447,10 +456,10 @@ font-family: 'Sanchez', serif;
     <div class="modal-content">
       <div class="modal-header">
         <h6 class="modal-title" style="text-align:center;" id="exampleModalLabel">CHECK YOUR CALORIES INTAKE OF FRUITS AND NUTS</h6>
-        <img src="vegi.png" width="90px">
+        <img src="https://media.tenor.com/images/ded77f1d96288c31311a7120cf79e3f1/tenor.gif" width="90px">
          <br><p>50g of each item is added . Click "+" to add 50 more grams</p>
-        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span> -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
 
         </button>
       </div>
@@ -461,7 +470,7 @@ font-family: 'Sanchez', serif;
         <div>Total calories: <span class="total-cart"></span>cal</div>
       <!-- </div> -->
       <div class="modal-footer">
-     <a href="index.html"><button id="add" style="  background: linear-gradient(to right, #ed213a, #93291e);" type="button" class="btn btn-primary">Order now</button></a>  
+     <a href="calculate.html"><button id="add" style="  background: linear-gradient(to right, #ed213a, #93291e);" type="button" class="btn btn-primary">Calculate now</button></a>  
              <button id="add" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
  
       </div>
@@ -476,7 +485,7 @@ font-family: 'Sanchez', serif;
 <style>
   #add
   {
-   background: linear-gradient(to right, #a8ff78, #96c93d); 
+  background: linear-gradient(to left, #40e0d0, #ff8c00, #ff0080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    border: 2px solid wheat;
   /*padding: 15px 25px;*/
   /*font-size: 24px;*/
@@ -733,7 +742,7 @@ displayCart();
   body
 {
   
- background-image: url(assets/images/oo.jpeg)
+ background-image: url(rain.jpg);
 
 }
 h1
