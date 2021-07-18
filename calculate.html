@@ -1,0 +1,486 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>Nutritionist | Calculator</title>
+    
+   
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+        
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+        
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+        
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9">
+
+    </script>
+</head>
+<script>
+    window.onload=function(){
+Swal.fire({
+        icon: 'info',
+        title: 'Lets Burn your calories',
+        html: "Estimate calories required based on your BMI and Activity levels💡",
+        footer: 'Invest in your health 🤸‍♀️'
+    })
+}
+</script>
+<br>
+  <div class="col-lg-18">
+
+                        <nav class="navbar navbar-expand-lg" style="margin-right:460px;">
+                         <a href="index.html"> <img style="height:100px;bottom: 1px;position: relative;left: 350px;" 
+                          src="food.png"></a>
+                           <button style="margin-right:700px;"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                           <div style="position:relative;top:1px" class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                               <br>
+                                 <ul id="nav" class="navbar-nav ml-auto">
+
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="index.html"><b><p style="color:darkblue;">Home</p></a></b>
+                                    </li>
+                           
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="fruits.html"><b><p style="color:darkblue;">Fruits</p></a></b>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="vegies.html"><b><p style="color:darkblue;">Vegies</p></a></b>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="carbs.html"><b><p style="color:darkblue;">Carbs</p></a></b>
+                                    </li>
+                                   <!--  <li class="nav-item">
+                                        <a class="page-scroll" href="#blog">Blog</a>
+                                    </li> -->
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            
+                            <div class="navbar-btn d-none d-sm-inline-block">
+                                <a class="main-btn2" data-scroll-nav="0" href="calculate.html">
+                                Calculate</a>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- bodyer -->
+        </div>
+
+
+
+            <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  
+
+
+
+    <!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Mate+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Benne&family=Sanchez:ital@1&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <br>
+          <div id="particles-2"></div>
+   <!-- <strong><b></b></strong>  <h1 class="center" style="color: white;">CALORIE COUNTER</h1> -->
+<br>
+   <br> <div class="grid-container">
+    <div class="grid-child-svg">
+    <img class="svg-img" src="hambu.svg" style="width: 450px;height: 600px;" >
+
+    </div>
+    <div class="container"  style=" box-shadow: 10px 10px #34ebb7; border: 2px solid cyan;border-radius: 50px 20px ">
+      <form id="calorie-form">
+       
+
+
+        <div class="grid">
+          <legend>Gender</legend>
+          <div>
+            <input type="radio" name="sex" id="female" value="F" checked />
+            <label for="female">
+ Female(2,000 calories)
+            </label>
+
+            <div>
+              <input type="radio" name="sex" id="male" value="M" />
+              <label for="male">
+  Male (2,500 calories) 
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <label >Age</label>
+ <input style="width:100px;position: relative;right: -90px;" type="number" name="Age" id="age" value="21" />
+ <br>
+   <label >Height(cm)</label>
+ <input style="width:100px;position: relative;right: -40px;" type="number" name="heighthum" id="heighthum"  value="156" />
+ <br>
+  <label >Weight(kg)</label>
+
+ <input style="width:100px;position: relative;right: -40px;" type="number" name="weighthum" id="weighthum" value="56"/>
+<br>
+   
+<label style="width:150px;"  for="cars">Activity level</label>
+<select  style="width:160px;position: relative;right: 30px;"  id="excercise" name="excercise">
+ <option style="width:150px" value="0">Little/ No excercise</option>
+  <option value="150">3 hrs a week</option>
+  <option value="200">Daily walk 5K steps</option>
+
+  <option value="300">7 hrs a week </option>
+  <option value="400">Daily walk > 5000 steps + cardio for 30mts</option>
+    <option value="600">Daily Intense Workout </option>
+  <option value="800">Daily Excerice+Physical Job</option>
+</select>
+        <div class="grid" id="entries">
+         <p>Breakfast</p><input
+            type="number"
+            min="0"
+            class="cal-control"
+            id="breakfast"
+          />
+       <p>  Lunch</p><input type="number" min="0" class="cal-control" id="lunch" />
+        <p> Dinner</p><input type="number" min="0" class="cal-control" id="dinner" />
+        </div>
+
+        <button type="button" class="btn-add" id="add">
+         <p style="color:white;">Add Entry</p>
+        </button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="btn-solid" id="calculate">
+        <p style="color:white;">  Calculate</p> 
+        </button>
+            <!-- <button onclick="findbmi()">Find</button> -->
+        <button type="button" class="btn-outline" id="clear">
+        <p>  Clear</p>
+        </button>
+      </form>
+
+      <div id="output"></div>
+    </div>
+
+
+<script>
+  function findbmi()
+  {
+var e = document.getElementById("excercise");
+var strUser = e.value;
+// alert(strUser);
+}
+
+
+
+</script>
+
+
+    <script src="index.js"></script>
+
+  </body>
+
+<style>
+#add{
+    background: linear-gradient(to left, #9cecfb, #65c7f7, #0052d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ border: 2px solid wheat;
+  /*padding: 15px 25px;*/
+  /*font-size: 24px;*/
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px skyblue;
+}
+ #calculate
+ {
+     background: linear-gradient(to left, #aaffa9, #11ffbd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+   border: 2px solid wheat;
+  /*padding: 15px 25px;*/
+  /*font-size: 24px;*/
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px seagreen;
+ }
+.container {
+  margin: 30px auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 5px;
+  width: 400px;
+  top: -680px;
+  left: 100px;
+  position: relative;
+}
+
+.center {
+  text-align: center;
+}
+
+h4,
+h3 {
+  margin: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 120px 300px;
+  grid-row-gap: 5px;
+  align-items: center;
+}
+
+button {
+  border-radius: 4px;
+  background-color: white;
+  font-family: 'Segoe UI', Arial;
+  font-size: 16px;
+  margin: 10px auto;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.btn-solid {
+  background-color: rgb(40, 167, 69);
+  color: white;
+  border: 1px solid rgb(40, 167, 69);
+}
+
+.btn-outline {
+  color: rgb(40, 167, 69);
+  border: 1px solid rgb(40, 167, 69);
+}
+
+.btn-add {
+  background-color: rgb(21, 101, 192);
+  color: white;
+  border: 1px solid rgb(21, 101, 192);
+  display: block;
+}
+
+.green-text {
+  color: rgb(40, 167, 69);
+}
+input.cal-control {
+  margin: 5px;
+  border-radius: 5px;
+  height: 20px;
+  border: 1px solid rgb(160, 160, 160);
+  padding: 5px;
+  width: 80px;
+}
+
+input.food-control {
+  margin: 5px 0px;
+  border-radius: 5px;
+  height: 20px;
+  border: 1px solid rgb(160, 160, 160);
+  padding: 5px;
+  width: 80px;
+}
+
+#output {
+  margin: 0px 20px 0px 20px;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.bordered-class {
+  border: 2px solid ghostwhite;
+  border-radius: 5px;
+  box-shadow: 5px 6px dimgray;
+}
+
+</style>
+<script>
+  document.getElementById('calorie-form').onsubmit = calculate;
+
+function calculate(e) {
+  e.preventDefault();
+  clearOutput();
+
+
+  const h = document.getElementById("heighthum").value;
+  const w = document.getElementById("weighthum").value;
+  const bmi=(w/(h*h))*10000;
+
+  const total = Array.from(document.getElementsByClassName('cal-control'))
+    .map(input => Number(input.value))
+    .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+  var maxCalories = document.getElementById('female').checked ? 2000 : 2500;
+  if(bmi>25)
+  {
+     maxCalories=maxCalories+350;
+  }
+  else if (bmi>22 && bmi<25)
+  {
+    maxCalories=maxCalories+250;
+  }
+  else if(bmi>19 && bmi<22)
+  {
+     maxCalories=maxCalories+150;
+  }
+  else if(bmi<15)
+  {
+    maxCalories=maxCalories+50;
+  }
+  else{
+    maxCalories=maxCalories+0;
+  }
+  
+  var e = document.getElementById("excercise");
+  var strUser = e.value;
+  maxCalo= maxCalories+parseInt(strUser);
+  // alert(strUser);
+  
+  
+  // alert(maxCalories);
+  const difference = total - maxCalo;
+  const surplusOrDeficit = difference > 0 ? 'Surplus' : 'Deficit';
+
+
+
+  const output = document.getElementById('output');
+  console.log(output);
+  const result = document.createElement('h6');
+  result.className = 'green-text';
+  const resultText = document.createTextNode(
+    `${Math.abs(difference)} Calorie ${surplusOrDeficit} `
+
+  );
+
+
+  result.appendChild(resultText);
+  output.appendChild(result);
+
+  const line = document.createElement('hr');
+  output.appendChild(line);
+
+  const recommended = document.createElement('p');
+  const recommendedText = document.createTextNode(
+    `${maxCalories} Recommended Calories`
+  );
+
+  recommended.appendChild(recommendedText);
+  output.appendChild(recommended);
+
+  const consumed = document.createElement('p');
+  consumed.innerHTML = `${total} Consumed Calories`;
+  output.appendChild(consumed);
+
+  output.setAttribute('class', 'bordered-class');
+  output.style.backgroundColor = '#EDF1FF';
+}
+
+  document.getElementById('add').onclick = function() {
+  
+  const foodInput = document.createElement('input');
+  foodInput.placeholder = 'food name';
+  foodInput.classList.add('food-control');
+  document.getElementById('entries').appendChild(foodInput);
+
+  const calorieInput = document.createElement('input');
+  calorieInput.setAttribute('type', 'number');
+  calorieInput.setAttribute('min', '0');
+  calorieInput.classList.add('cal-control');
+  calorieInput.classList.add('extra-cal-control');
+  document.getElementById('entries').appendChild(calorieInput);
+
+};
+
+document.getElementById('clear').onclick = function() {
+  clearOutput();
+  clearForm();
+};
+
+const clearOutput = () => {
+  document.getElementById('output').innerHTML = '';
+  document.getElementById('output').classList.remove('bordered-class');
+};
+
+const clearForm = () => {
+  const foodInputs = Array.from(document.getElementsByClassName('food-control'));
+
+  foodInputs.map(input => input.remove());
+
+  const calInputs = Array.from(document.getElementsByClassName('extra-cal-control'));
+
+  calInputs.map(input => input.remove());
+
+  document.getElementById('calorie-form').reset();
+
+};
+
+</script>
+
+<style>
+  body
+{
+  
+ background-image: url(rain.jpg);
+  background-attachment: fixed;
+  /*overflow: hidden; */
+
+
+}
+h1
+{
+font-family: 'Sanchez', serif;
+}
+p,label,legend
+{
+
+  
+   font-family: 'Josefin Sans', sans-serif;
+  
+
+}
+</style>
+</html>

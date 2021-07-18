@@ -41,12 +41,11 @@
                                     <li class="nav-item active">
                                         <a class="page-scroll" href="head.html">Home</a>
                                     </li>
-                                   <!--  <li class="nav-item">
-                                        <a class="page-scroll" href="calci.html">Calci</a>
-                                    </li> -->
+                                  
                                     <li class="nav-item">
                                         <a class="page-scroll" href="fruits.html">Fruits</a>
                                     </li>
+
                                     <li class="nav-item">
                                         <a class="page-scroll" href="vegies.html">Vegies</a>
                                     </li>
@@ -68,7 +67,7 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div>
-
+</div>
 
 
             <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
@@ -97,32 +96,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
   </head>
+  
+
+
   <body>
-    <br>
-   <strong><b></b></strong>  <h1 class="center" style="color: white;">CALORIE COUNTER</h1>
-<br>
-    <div class="container" style=" box-shadow: 10px 10px #ffefd5; border: 2px solid #ffdab9;border-radius: 50px 20px ">
+    <br> <div class="grid-container">
+    <div class="grid-child-svg">
+    <img class="svg-img" src="hambu.svg" style="width: 450px;height: 600px;" >
+
+    </div>
+    
+      <div class="grid-child">
+   <!-- <strong><b></b></strong>  <h1 class="center" style="color: white;">CALORIE COUNTER</h1> -->
+<br> 
+    <div class="container" style=" box-shadow: 10px 10px #34ebb7; border: 2px solid cyan;border-radius: 50px 20px ">
       <form id="calorie-form">
        
 
         <div class="grid">
-          <legend>Sex</legend>
+           <div class="grid" id="entries">
+         <p>Age</p><input
+            type="number"
+            min="0"
+            class="cal-control"
+            id="breakfast"
+          />
+
+          <p>Gender</p>
           <div>
             <input type="radio" name="sex" id="female" value="F" checked />
             <label for="female">
- Female(2,000 calories)
+ Female
             </label>
-
-            <div>
-              <br>
               <input type="radio" name="sex" id="male" value="M" />
               <label for="male">
-  Male (2,500 calories) 
+  Male
               </label>
-            </div>
+      
           </div>
         </div>
+       
         <br>
+          <p>Weight(kg)</p><input
+            type="number"
+            min="0"
+            class="cal-control"
+            id="breakfast"
+          />
+           <p>Height(cm)</p>
+
+
+           <input
+            type="number"
+            min="0"
+            class="cal-control"
+            id="breakfast"
+          />
+          
+          
+          <label style="width:190px"  for="cars">Excercise level</label>
+<select  style="width:190px"  id="excercise" name="excercise">
+<!--   <option style="width:190px" value="volvo"></option>
+ -->  <option style="width:190px" value="volvo">Little or no excercise</option>
+  <option value="saab">3 hrs a week</option>
+  <option value="fiat">7 hrs a week </option>
+  <option value="fiat">Daily walk 5000 steps</option>
+  <option value="fiat">Daily walk > 5000 steps + cardio for 30mts</option>
+
+  <option value="fiat">Daily Excerice+Physical Job</option>
+  <option value="audi">Daily Intense Workout </option>
+</select>
+
+
         <div class="grid" id="entries">
          <p>Breakfast</p><input
             type="number"
@@ -133,6 +178,7 @@
        <p>  Lunch</p><input type="number" min="0" class="cal-control" id="lunch" />
         <p> Dinner</p><input type="number" min="0" class="cal-control" id="dinner" />
         </div>
+      </div>
         <button type="button" class="btn-add" id="add">
          <p style="color:white;">Add Entry</p>
         </button>
@@ -144,9 +190,10 @@
         </button>
       </form>
 
+
       <div id="output"></div>
     </div>
-
+ 
     <script src="index.js"></script>
 
   </body>
@@ -160,6 +207,9 @@
   padding: 30px 40px;
   border-radius: 5px;
   width: 400px;
+  top: -580px;
+  left: 100px;
+  position: relative;
 }
 
 .center {
@@ -256,8 +306,9 @@ function calculate(e) {
     .map(input => Number(input.value))
     .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-  const maxCalories = document.getElementById('female').checked ? 2000 : 2500;
-
+// starred
+  // const maxCalories = document.getElementById('female').checked ? 2000 : 2500;
+  if(document.getElementById('female').checked)
   const difference = total - maxCalories;
   const surplusOrDeficit = difference > 0 ? 'Surplus' : 'Deficit';
 
@@ -333,7 +384,12 @@ const clearForm = () => {
   body
 {
   
- background-image: url(assets/images/oo.jpeg)
+ background-image:url(bg-tec.jpg);
+  background-repeat: no-repeat;
+/*  background-attachment: fixed;
+*/  background-size: cover;
+  /*url(assets/images/oo.jpeg)*/
+  overflow: hidden;
 
 }
 h1
