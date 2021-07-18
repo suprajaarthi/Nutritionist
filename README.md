@@ -1,6 +1,7 @@
 # Calorie-Calci
 
-https://www.bcm.edu/cnrc-apps/caloriesneed.cfm
+   https://your-choice.netlify.app/
+
 
 - Your personalized nutritionist to help you make healthier choices and enjoy a happier lifestyle
 - Track the nutrient and calory content of the common foods you have 
